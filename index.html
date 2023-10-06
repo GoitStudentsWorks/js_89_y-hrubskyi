@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="From classic sips to exotic mixes, we're your key to becoming a cocktail wizard!"
+    />
+    <link rel="icon" type="image/svg+xml" href="/js_89_y-hrubskyi/favicon.svg" />
+    <title>Drinkify</title>
+    
+    <script type="module" crossorigin src="/js_89_y-hrubskyi/assets/index-8b0eb0c3.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_89_y-hrubskyi/assets/drop-down-modal-71b8b7f5.js">
+    <link rel="modulepreload" crossorigin href="/js_89_y-hrubskyi/assets/tui-lib-pagination-c53fd102.js">
+    <link rel="stylesheet" href="/js_89_y-hrubskyi/assets/drop-down-modal-09958841.css">
+  </head>
+  <body class="light-theme">
+    <div class="bg">
+      <header>
+  <div class="container">
+    <nav class="main-nav">
+      <div class="header-nav">
+        <ul class="header-list-nav">
+          <li>
+            <a href="./index.html" class="header-nav-home nav-link">Home</a>
+          </li>
+          <li>
+            <button class="header-button-styles header-nav-favorite nav-link">
+              Favorite
+              <svg width="24" height="24" class="arrow-header">
+                <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a href="./contact.html" class="header-nav-home nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="header-link-nav-container">
+          <a href="./favorite-cocktails.html" class="header-link-nav">
+            Favorite cocktails
+          </a>
+          <a href="./favorite-ingredients.html" class="header-link-nav">
+            Favorite ingredients
+          </a>
+        </div>
+      </div>
+      <!-- logo -->
+      <div class="logo-container">
+        <a href="./index.html" class="logo nav-link"
+          >DRINKIFY
+          <svg width="21" height="18" class="logo-icon">
+            <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-cocktail"></use>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Dark or light theme -->
+      <div class="dark-and-lite-container">
+        <button
+          type="button"
+          class="dark-light header-button-styles dark-light-desctop"
+          aria-label="toggle theme"
+        >
+          <svg width="64" height="32" class="light-icon">
+            <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-light"></use>
+          </svg>
+          <svg width="64" height="32" class="dark-icon">
+            <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-dark"></use>
+          </svg>
+        </button>
+
+        <!-- Burger -->
+        <button
+          type="button"
+          class="burger header-button-styles js-open-menu"
+          aria-label="open mobile menu"
+        >
+          <svg width="32" height="32" class="burger-svg-header">
+            <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!--Mobile menu -->
+    <div class="burger-menu js-menu-container">
+      <div class="modal-body container">
+        <div class="header-modal">
+          <a href="./index.html" class="modal-logo"
+            >DRINKIFY
+            <svg width="21" height="18" class="logo-svg-modal-menu">
+              <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-cocktail"></use>
+            </svg>
+          </a>
+
+          <!-- Dark or light -->
+          <div class="flex-container-icon">
+            <button
+              type="button"
+              class="header-button-styles dark-light"
+              aria-label="toggle theme"
+            >
+              <svg width="50" height="25" class="light-icon-modal light-icon">
+                <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-light"></use>
+              </svg>
+              <svg width="50" height="25" class="dark-icon dark-icon-modal">
+                <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-dark"></use>
+              </svg>
+            </button>
+
+            <!-- Modal close -->
+            <button
+              type="button"
+              class="header-button-styles close-mob-menu-btn js-close-menu"
+              aria-label="close mobile menu"
+            >
+              <svg width="32" height="32" class="close-svg-modal-header">
+                <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal nav -->
+        <div class="header-modal-nav">
+          <ul class="list-modal-nav">
+            <li><a href="./index.html" class="modal-nav-home">Home</a></li>
+            <li>
+              <button
+                class="header-button-styles modal-nav-favorite"
+                type="button"
+              >
+                Favorite
+                <svg width="24" height="24" class="arrow-header-modal">
+                  <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="link-modal-nav-container">
+            <a href="./favorite-cocktails.html" class="link-modal-nav">
+              Favorite cocktails
+            </a>
+            <a href="./favorite-ingredients.html" class="link-modal-nav">
+              Favorite ingredients
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <svg width="391px" height="391" class="star-icon">
+          <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-star"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main>
+        <section class="hero">
+  <div class="container hero-container">
+    <div class="hero-textcontent-box">
+      <h1 class="slogan">
+        A party without <span class="slogan-accent">cocktails</span> <br />
+        is not like a party
+      </h1>
+      <p class="slogsn-desc">
+        From classic sips to exotic mixes, we're your key to becoming a cocktail
+        wizard!
+      </p>
+      <a class="hero-btn" href="#coctails"> View cocktails </a>
+    </div>
+
+    <div class="hero-img-box">
+      <picture>
+        <source
+          srcset="/js_89_y-hrubskyi/assets/girl-desktop@1x-c2a68346.png 1x, /js_89_y-hrubskyi/assets/girl-desktop@2x-a2fabc76.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/js_89_y-hrubskyi/assets/girl-tablet@1x-bef4b3c6.png 1x, /js_89_y-hrubskyi/assets/girl-tablet@2x-1a6f5e46.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/js_89_y-hrubskyi/assets/girl-mobile@1x-07ad5207.png 1x, /js_89_y-hrubskyi/assets/girl-mobile@2x-74f4a29f.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img src="/js_89_y-hrubskyi/assets/girl-mobile@1x-07ad5207.png" alt="girl with drink" />
+      </picture>
+
+      <p class="hero-icon-box-desc">Search your favorite cocktail by ABC</p>
+    </div>
+  </div>
+</section>
+
+        <section class="search-cocktails-section container">
+  <ul class="keyboard-list" data-action="keyboard"></ul>
+  <select class="select-letters"></select>
+  <form class="search-form" autocomplete="off">
+    <div class="input-wraper">
+      <input
+        placeholder="Search"
+        name="search"
+        class="search-form-input"
+        type="text"
+      />
+      <button
+        class="search-form-btn"
+        type="submit"
+        aria-label="search cocktails"
+      >
+        <svg class="icon-search" width="18px" height="18px">
+          <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-search"></use>
+        </svg>
+      </button>
+    </div>
+  </form>
+</section>
+
+        <section class="cocktails-section" id="coctails">
+  <div class="container">
+    <h2 class="section-title">Cocktails</h2>
+    <button type="button" class="sort-by-rating hidden">best rating</button>
+    <ul
+      class="cocktails-list random-cocktails-list random-cocktails-list-js"
+    ></ul>
+  </div>
+  <div
+    id="tui-pagination-container"
+    class="tui-pagination container is-hidden"
+  ></div>
+</section>
+
+        <!-- <section class="pagination-container is-active-pagination">
+  <div class="container wrap-pagination">
+    <div class="pagenumbers" id="pagination">
+      <button type="button" class="left-button button-pagination">
+        <svg class="left-arrow" height="24" width="24">
+          <use href="./img/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <ul id="pagination-list" class="pagination-list"></ul>
+      <button type="button" class="right-button button-pagination">
+        <svg class="right-arrow" height="24" width="24">
+          <use href="./img/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+ -->
+      </main>
+      <!-- <section class="section contact-section">
+  <div class="container">
+    <h2 class="section-title">Project team</h2>
+    <div class="swiper members-swiper">
+      <ul class="members-list swiper-wrapper">
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1801.webp"
+            srcset=""
+            alt="YAKIV"
+          />
+          <h2 class="members-name">YAKIV HRUBSKYI</h2>
+          <h3 class="members-subtitle-name">Team lead</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1802.webp"
+            srcset=""
+            alt="ILIA SEMENOVA"
+          />
+          <h2 class="members-name">ILIA SEMENOVA</h2>
+          <h3 class="members-subtitle-name">Scrum master</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="./img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1803.webp"
+            srcset=""
+            alt="SERHII LUTSENKO"
+          />
+          <h2 class="members-name">SERHII LUTSENKO</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1805.webp"
+            srcset=""
+            alt="SERGII PIGAN"
+          />
+          <h2 class="members-name">SERGII PIGAN</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1806.webp"
+            srcset=""
+            alt="YURII KRAVCHUK"
+          />
+          <h2 class="members-name">YURII KRAVCHUK</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1807.webp"
+            srcset=""
+            alt="OLESIA MEDVEDEVA"
+          />
+          <h2 class="members-name">OLESIA MEDVEDEVA</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/IMG_1808.webp"
+            srcset=""
+            alt="OLEXANDRA PRYSCHEPA"
+          />
+          <h2 class="members-name">OLEXANDRA PRYSCHEPA</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/stock-photo-dog-summer-beach.webp"
+            srcset=""
+            alt="ANGELINA CHOLAK"
+          />
+          <h2 class="members-name">ANGELINA CHOLAK</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/stock-photo-beagle-in-sunglasses-drink-cocktail.webp"
+            srcset=""
+            alt="ANDRII POPOV"
+          />
+          <h2 class="members-name">ANDRII POPOV</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="members-list-item swiper-slide">
+          <img
+            width="316"
+            height="289"
+            class="members-foto"
+            src="/img/swiper/stock-photo-dog-sings-a-song.webp"
+            srcset=""
+            alt="MYKOLA PAVLOVYCH"
+          />
+          <h2 class="members-name">MYKOLA PAVLOVYCH</h2>
+          <h3 class="members-subtitle-name">Full-stack developer</h3>
+          <div class="like-dislike-btn">
+            <button type="button" class="btn-like">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-heart"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn-dislike">
+              <svg
+                width="24px"
+                height="24px"
+                class="svg-icon-dislike"
+                aria-label="like button"
+              >
+                <use href="/img/sprite.svg#icon-dislike"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination members-pagination"></div>
+    </div>
+  </div>
+</section>
+ -->
+      <footer class="footer">
+  <div class="footer-container container">
+    <div class="footer-logo">
+      <a href="./index.html" class="logo">
+        DRINKIFY
+        <svg width="21" height="18" class="logo-icon">
+          <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-cocktail"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-social-wrapper">
+      <p class="footer-social-title">We in social</p>
+      <ul class="footer-social-list list">
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            aria-label="facebook icon"
+          >
+            <svg class="footer-social-icon" width="14" height="14">
+              <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            aria-label="instagram icon"
+          >
+            <svg class="footer-social-icon" width="14" height="14">
+              <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            aria-label="youtube icon"
+          >
+            <svg class="footer-social-icon" width="14" height="14">
+              <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+      <div class="feedback-box visually-hidden">
+  <button type="button" class="feedback-btn like-btn" aria-label="like">
+    <svg width="36" height="36">
+      <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-like"></use>
+    </svg>
+  </button>
+  <button type="button" class="feedback-btn dislike-btn" aria-label="dislike">
+    <svg width="36" height="36">
+      <use href="/js_89_y-hrubskyi/assets/sprite-03e7f022.svg#icon-dislike"></use>
+    </svg>
+  </button>
+</div>
+
+    </div>
+
+    <div data-backdrop>
+      <div class="modal"></div>
+    </div>
+
+    
+  </body>
+</html>
